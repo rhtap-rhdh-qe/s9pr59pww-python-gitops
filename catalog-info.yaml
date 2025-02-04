@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: s9pr59pww-python-gitops
+  description: This is GitOps manifest for s9pr59pww-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=s9pr59pww-python
+    backstage.io/kubernetes-id: s9pr59pww-python 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: s9pr59pww-python   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:s9pr59pww-python

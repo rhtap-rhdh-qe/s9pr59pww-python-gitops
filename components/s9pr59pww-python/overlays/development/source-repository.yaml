@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: s9pr59pww-python-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/s9pr59pww-python
